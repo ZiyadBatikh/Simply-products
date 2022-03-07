@@ -1,0 +1,42 @@
+    .links-of-the-website-pages {
+        height: 70px;
+        transition: all 0.5s;
+        z-index: 997;
+        transition: all 0.5s;
+        background: rgb(228, 196, 196);
+        box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 10%);
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+    
+    a {
+        text-align: right;
+        padding: 10px 0 10px 30px;
+        text-decoration: none;
+    }
+    
+    a:visited {
+        color: rgb(20, 3, 3)
+    }
+    
+    a:link {
+        color: rgb(156, 114, 114);
+    }
+    
+    a:hover,
+    a:focus {
+        color: blue;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+    
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+    }
