@@ -86,7 +86,7 @@ a:hover {
     width: 328px;
 }
 
-#boxes-style {
+.input-box {
     display: block;
     width: 100%;
     box-sizing: border-box;
