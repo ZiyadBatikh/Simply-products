@@ -3,30 +3,374 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simply Products</title>
-    <link rel="stylesheet" href="/css/home.css" />
-    <link rel="shortcut icon" type="image/png" href="icons/fav-icon.png" />
+    <link rel="icon" href="images/favicon-sm.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon-md.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon-lg.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
-    <img src="/images/pexels-tracy-le-blanc-607812.jpg" alt="The main photo" />
-    <header id="header" class="website-pages">
-        <div class="links-of-the-website-pages">
-            <div class="Logo">
-                <h1><a href="home.html">Simply Products</a></h1>
-            </div>
-            <a href="/admin.html"> Admin</a>
-            <a href="/basket.html">Basket</a>
-            <a href="/product-details.html">Product-Details</a>
-            <a href="/products.html">Products</a>
-        </div>
-    </header>
+    <header>
+        <nav class="nav collapsible">
+            <a class="nav__brand" href="/home.html"><img src="icons/logo.png" alt="home" style="width: 187%" /></a>
 
-    <script src="scripts/database.js"></script>
-    <script src="scripts/dom.js"></script>
-    <script src="scripts/home.js"></script>
+            <div class="input-group">
+                <input aria-label="Domain" type="text" class="input" placeholder="What Are You Looking For?" />
+                <button class="btn btn--accent">
+            <svg class="icon icon--white">
+              <use href="images/sprite.svg#search"></use></svg
+            >Search
+          </button>
+            </div>
+            <ul class="list nav__list collapsible__content">
+                <li class="nav__item">
+                    <a target="_blank" href="/login.html">Account</a>
+                </li>
+                <li class="nav__item">
+                    <a target="_blank" href="">Basket</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2>Products</h2>
+            <ul>
+                <li>
+                    <a href="#"><i class="fas fa-home"></i>Mobiles</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-user"></i>Laptops</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-address-card"></i>TVs</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-project-diagram"></i>Fashion</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <section class="block container">
+        <section data-aos="fade-up" class="block container block-plans">
+            <div class="grid grid--1x3">
+                <div class="plan">
+                    <div class="card card--secondary">
+                        <header class="card__header">
+                            <img src="/images/Samsung-Galaxy-A12.jpg" alt="" />
+                        </header>
+                        <div class="card__body">
+                            <ul class="list list--tick">
+                                <li class="list__item">Samsung A12</li>
+                                <li class="list__item">3 GB RAM</li>
+                                <li class="list__item">128 GB storage</li>
+                                <li class="list__item">Price : 100$</li>
+                            </ul>
+                            <button class="btn btn--outline btn--block">
+                  Add To Basket
+                </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="plan plan--popular">
+                    <div class="card card--primary">
+                        <header class="card__header">
+                            <img src="/images/614fbeOTjDL._AC_SY679_.jpg" alt="" />
+                        </header>
+                        <div class="card__body">
+                            <ul class="list list--tick">
+                                <li class="list__item"> IPhone 13</li>
+                                <li class="list__item">Storage capacity: 256 GB</li>
+                                <li class="list__item">Ram : 256GB</li>
+                                <li class="list__item">Color :Sierra Blue</li>
+                                <li class="list__item">Price : 270$</li>
+                            </ul>
+                            <button class="btn btn--outline btn--block">
+                  Add To Basket
+                </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="plan">
+                    <div class="card card--secondary">
+                        <header class="card__header">
+                            <img src="/images/Xiaomi-11-Lite-5G-NE-1.jpg" alt="" />
+                        </header>
+                        <div class="card__body">
+                            <ul class="list list--tick">
+                                <li class="list__item">Xiaomi 11 Lite</li>
+                                <li class="list__item">RAM : 8GB</li>
+                                <li class="list__item">Storage : 256GB</li>
+                                <li class="list__item">Processor : Qualcomm® Snapdragon™ 778G</li>
+                                <li class="list__item">Price : 200$</li>
+                            </ul>
+                            <button class="btn btn--outline btn--block">
+                  Add To Basket
+                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-aos="fade-up" class="block container block-plans">
+            <div class="grid grid--1x3">
+                <div class="plan">
+                    <div class="card card--secondary">
+                        <header class="card__header">
+                            <img src="/images/1.jpg" alt="T-shirt" />
+                        </header>
+                        <div class="card__body">
+                            <ul class="list list--tick">
+                                <li class="list__item">
+                                    Ho Holland Round Neck White T-shirt
+                                </li>
+                                <li class="list__item">
+                                    cotton white Soft top from Ho Holland
+                                </li>
+                                <li class="list__item">Made of 100% Pure Cotton</li>
+                                <li class="list__item">Price : 198$</li>
+                            </ul>
+                            <button class="btn btn--outline btn--block">
+                  Add To Basket
+                </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="plan plan--popular">
+                    <div class="card card--primary">
+                        <header class="card__header">
+                            <img src="/images/download (1).jfif" alt="" />
+                        </header>
+                        <div class="card__body">
+                            <ul class="list list--tick">
+                                <li class="list__item">Dell Inspiron 3583</li>
+                                <li class="list__item">128 SSD Hard disk</li>
+                                <li class="list__item">8 GB Ram</li>
+                                <li class="list__item">Core i7 Processor</li>
+                                <li class="list__item">Price : 300$</li>
+                            </ul>
+                            <button class="btn btn--outline btn--block">
+                  Add To Basket
+                </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="plan">
+                    <div class="card card--secondary">
+                        <header class="card__header">
+                            <img src="/images/71biI46sg3L._AC_SX679_.jpg" alt="" />
+                        </header>
+                        <div class="card__body">
+                            <ul class="list list--tick">
+                                <li class="list__item">LG 43 Inch FHD LED TV</li>
+                                <li class="list__item">43 Inches</li>
+                                <li class="list__item">Resolution : 1080px</li>
+                                <li class="list__item">Color :Black</li>
+                                <li class="list__item">Price : 320$</li>
+                            </ul>
+                            <button class="btn btn--outline btn--block">
+                  Add To Basket
+                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="block container">
+            <section data-aos="fade-up" class="block container block-plans">
+                <div class="grid grid--1x3">
+                    <div class="plan">
+                        <div class="card card--secondary">
+                            <header class="card__header">
+                                <img src="/images/Samsung-Galaxy-A12.jpg" alt="" />
+                            </header>
+                            <div class="card__body">
+                                <ul class="list list--tick">
+                                    <li class="list__item">Samsung A12</li>
+                                    <li class="list__item">3 GB RAM</li>
+                                    <li class="list__item">128 GB storage</li>
+                                    <li class="list__item">Price : 100$</li>
+                                </ul>
+                                <button class="btn btn--outline btn--block">
+                      Add To Basket
+                    </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan plan--popular">
+                        <div class="card card--primary">
+                            <header class="card__header">
+                                <img src="/images/download (1).jfif" alt="" />
+                            </header>
+                            <div class="card__body">
+                                <ul class="list list--tick">
+                                    <li class="list__item">Dell Inspiron 3583</li>
+                                    <li class="list__item">128 SSD Hard disk</li>
+                                    <li class="list__item">8 GB Ram</li>
+                                    <li class="list__item">Core i7 Processor</li>
+                                    <li class="list__item">Price : 300$</li>
+                                </ul>
+                                <button class="btn btn--outline btn--block">
+                      Add To Basket
+                    </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan">
+                        <div class="card card--secondary">
+                            <header class="card__header">
+                                <img src="/images/71biI46sg3L._AC_SX679_.jpg" alt="" />
+                            </header>
+                            <div class="card__body">
+                                <ul class="list list--tick">
+                                    <li class="list__item">LG 43 Inch FHD LED TV</li>
+                                    <li class="list__item">43 Inches</li>
+                                    <li class="list__item">Resolution : 1080px</li>
+                                    <li class="list__item">Color :Black</li>
+                                    <li class="list__item">Price : 320$</li>
+                                </ul>
+                                <button class="btn btn--outline btn--block">
+                      Add To Basket
+                    </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <h2>What Our Customers are Saying</h2>
+            <p>
+                These are some reports from clients who have dealt with us
+            </p>
+            </header>
+            <div class="container">
+                <div class="card testimonial">
+                    <div class="grid grid--1x2">
+                        <div class="testimonial__image">
+                            <img src="images/photo1644757743.jpeg" alt="A happy, smiling customer" />
+                            <span class="icon-container icon-container--accent">
+                <svg class="icon icon--white icon--small">
+                  <use href="images/sprite.svg#quotes"></use>
+                </svg>
+              </span>
+                        </div>
+                        <blockquote class="quote">
+                            <p class="quote__text">
+                                Simply products is the best company I dealt with in terms of buying and selling, they have good clients in dialogue and they have a good commodity
+                            </p>
+                            <footer>
+                                <div class="media">
+                                    <div class="media__image">
+                                        <svg class="icon icon--primary quote__line">
+                      <use href="images/sprite.svg#line"></use>
+                    </svg>
+                                    </div>
+                                    <div class="media__body">
+                                        <h3 class="media__title quote__author">Ziyad Batikh</h3>
+                                        <p class="quote__organization">Ziyad Company</p>
+                                    </div>
+                                </div>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card testimonial">
+                    <div class="grid grid--1x2">
+                        <div class="testimonial__image">
+                            <img src="images/12716387_478492572334493_7261028337629777638_o.jpg" alt="A happy, smiling customer" />
+                            <span class="icon-container icon-container--accent">
+                <svg class="icon icon--white icon--small">
+                  <use href="images/sprite.svg#quotes"></use>
+                </svg>
+              </span>
+                        </div>
+                        <blockquote class="quote">
+                            <p class="quote__text">
+                                I bought many tools from here, they have great products at a cheap price compared to the rest of the market, and the customers' dealing with customers is very good and their products are presented to them.
+                            </p>
+                            <footer>
+                                <div class="media">
+                                    <div class="media__image">
+                                        <svg class="icon icon--primary quote__line">
+                      <use href="images/sprite.svg#line"></use>
+                    </svg>
+                                    </div>
+                                    <div class="media__body">
+                                        <h3 class="media__title quote__author">Mostafa Elmoghazi</h3>
+                                        <p class="quote__organization">Hindawy Company</p>
+                                    </div>
+                                </div>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="callout callout--primary callout-signup">
+                <div class="grid grid--1x2">
+                    <div class="callout__content">
+                        <h2 class="callout__heading">Sign Up</h2>
+                        <p>
+                            Register And Enjoy With Simply Products
+                        </p>
+                    </div>
+                    <a target="_blank" href="/register.html" class="btn btn--secondary btn--stretched">Sign Up</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <footer class="block block--dark footer">
+      <div class="container grid footer__sections">
+        <section class="collapsible collapsible--expanded footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Products</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Tvs</a></li>
+                    <li><a href="#">Labtops</a></li>
+                    <li><a href="#">Mobiles</a></li>
+                    </ul>
+                </div>
+    </section>
+    <section class="collapsible footer__section">
+        <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Company</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use href="images/sprite.svg#chevron"></use>
+            </svg>
+        </div>
+        <div class="collapsible__content">
+            <ul class="list">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Why Our Products</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="footer__brand">
+        <img src="icons/logo.png" alt="logo" " />
+
+    </div>
+    </div>
+    </footer>
+    <script src="js/main.js "></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
